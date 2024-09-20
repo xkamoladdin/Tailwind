@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="bg-slate-400 flex h-screen justify-center items-center flex-col">
+    <div class="bg-white rounded-xl py-3 px-3 flex justify-between items-center w-96">
+        <div class="flex items-center gap-3">
+            <div class="w-12 h-12 bg-black rounded-full"></div>
+            <div>
+                <h3>John Doe</h3>
+                <p>@johndoe</p>
+            </div>
+        </div>
+        <button class="border py-2 px-2 rounded-md">View</button>
+    </div>
+
+
+    <div class="w-96 rounded-xl bg-white mt-10 py-3 px-3">
+        <h3 class="mb-4">Sign in</h3>
+        <form action="">
+            <input type="text" placeholder="Login" class="border-b-2 w-full">
+            <input type="text" placeholder="Password" class="border-b-2 w-full mt-6 mb-6">
+            <div class="flex justify-between mb-10">
+                <form action="">
+                    <input type="checkbox">
+                </form>
+                <a href="">Forgot</a>
+            </div>
+        </form>
+        <a href="" class="bg-blue-700 py-2">Login</a>
+    </div>
 </body>
 </html>
